@@ -7,73 +7,73 @@
     <SolutionConfiguration>Debug|ARM</SolutionConfiguration>
     <PackageArchitecture>arm</PackageArchitecture>
     <PackageIdentityName>22aca02c-5db4-4b5f-b89a-25183c9c644b</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\PicToTextRT\obj\ARM\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\PicToTextRT\obj\ARM\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\PicToTextRT\bin\ARM\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\PicToTextRT\bin\ARM\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\PicToTextRT\bin\ARM\Debug\PicToTextRT.exe">
+    <AppxPackagedFile Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\PicToTextRT\bin\ARM\Debug\PicToTextRT.exe">
       <PackagePath>PicToTextRT.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\packages\LiveSDK.5.6\WindowsXAML\Microsoft.Live.dll">
+    <AppxPackagedFile Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\packages\LiveSDK.5.6\WindowsXAML\Microsoft.Live.dll">
       <PackagePath>Microsoft.Live.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\packages\Microsoft.Net.Http.2.2.28\lib\wpa81\System.Net.Http.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\packages\Microsoft.Net.Http.2.2.28\lib\wpa81\System.Net.Http.Extensions.dll">
       <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\packages\Microsoft.Net.Http.2.2.28\lib\wpa81\System.Net.Http.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\packages\Microsoft.Net.Http.2.2.28\lib\wpa81\System.Net.Http.Primitives.dll">
       <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\packages\Microsoft.Windows.Ocr.1.0.0\build\wpa81\..\..\lib\wpa81\ARM\WindowsPreview.Media.Ocr.dll">
+    <AppxPackagedFile Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\packages\Microsoft.Windows.Ocr.1.0.0\build\wpa81\..\..\lib\wpa81\ARM\WindowsPreview.Media.Ocr.dll">
       <PackagePath>WindowsPreview.Media.Ocr.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\packages\Microsoft.Windows.Ocr.1.0.0\build\wpa81\\..\..\lib\wpa81\ARM\WindowsPreview.Media.Ocr.winmd">
+    <AppxPackagedFile Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\packages\Microsoft.Windows.Ocr.1.0.0\build\wpa81\\..\..\lib\wpa81\ARM\WindowsPreview.Media.Ocr.winmd">
       <PackagePath>WindowsPreview.Media.Ocr.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\PicToTextRT\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\PicToTextRT\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\PicToTextRT\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\PicToTextRT\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\PicToTextRT\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\PicToTextRT\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\PicToTextRT\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\PicToTextRT\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\PicToTextRT\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\PicToTextRT\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\PicToTextRT\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\PicToTextRT\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\PicToTextRT\Fonts\LiveSymbol.ttf">
+    <AppxPackagedFile Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\PicToTextRT\Fonts\LiveSymbol.ttf">
       <PackagePath>Fonts\LiveSymbol.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\PicToTextRT\OcrResources\MsOcrRes.orp">
+    <AppxPackagedFile Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\PicToTextRT\OcrResources\MsOcrRes.orp">
       <PackagePath>OcrResources\MsOcrRes.orp</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\PicToTextRT\bin\ARM\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\PicToTextRT\bin\ARM\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\PicToTextRT\bin\ARM\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\PicToTextRT\bin\ARM\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\PicToTextRT\bin\ARM\Debug\PicToTextRT.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\PicToTextRT\bin\ARM\Debug\PicToTextRT.xr.xml">
       <PackagePath>PicToTextRT.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\PicToTextRT\bin\ARM\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Pranav\documents\visual studio 2013\Projects\PicToTextRT\PicToTextRT\bin\ARM\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

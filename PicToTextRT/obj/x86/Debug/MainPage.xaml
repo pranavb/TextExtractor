@@ -9,28 +9,32 @@
     xmlns:System="clr-namespace:System;assembly=mscorlib"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:ConnectionId='1' Label="sign in" x:Name="btnLogin"                        />
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
 
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="8*" />
             <RowDefinition Height="1*" />
-            <RowDefinition Height="2*" />
-            <RowDefinition Height="4*" />
         </Grid.RowDefinitions>
         
-        <Button x:ConnectionId='1' Grid.Row="0" x:Name="getBtn" Content="Get Text" HorizontalAlignment="Center" VerticalAlignment="Center"                  />
-        <ScrollViewer Grid.Row="1">
-            <RichTextBlock>
-                <Paragraph FontSize="15" Margin="10, 10">
-                    <Run x:Name="outputPara" Text=""/>
+        <ScrollViewer Grid.Row="0">
+            <RichTextBlock Margin="0, 20, 0, 20">
+                <Paragraph FontSize="22" Margin="10, 10">
+                    <Run x:Name="outputPara" Text="Tap the Get Text button to select a picture (or to snap a new one!) from which to extract text."/>
                 </Paragraph>
             </RichTextBlock>
         </ScrollViewer>
         <!--<Button Grid.Row="2" x:Name="saveBtn" Content="Save to OneNote" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Btn_Click_1"/>-->
         <!--<Image x:Name="pic" Source="Assets/Logo.scale-240.png" HorizontalAlignment="Left" Height="171" Margin="69,358,0,0" VerticalAlignment="Top" Width="207"/>-->
-        <StackPanel Grid.Row="2" Orientation="Vertical">
-            <Button x:ConnectionId='2' x:Name="btnLogin" Content="Sign In"                        />
-            <Button x:ConnectionId='3' x:Name="btnCreatePage" Content="Create Page" Height="40" Width="138" FontWeight="Bold" Background="GhostWhite" Foreground="DarkBlue" FontSize="12"                        />
-            <TextBox x:Name="tbResponse" Height="400" Width="850" FontSize="12" AcceptsReturn="True" />
+        <StackPanel Grid.Row="1"  Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:ConnectionId='2' x:Name="getBtn" Content="Get Text" Margin="0, 0, 20, 0"                  />
+            <Button x:ConnectionId='3' x:Name="btnCreatePage" IsEnabled="False" Content="Save to OneNote"                        />
         </StackPanel>
     </Grid>
 </Page>

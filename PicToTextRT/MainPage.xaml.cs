@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Diagnostics;
 using Windows.UI.Xaml.Media.Imaging;
 
 using Windows.UI.Xaml.Controls;
@@ -56,8 +57,6 @@ namespace PicToTextRT
         public MainPage()
         {
             this.InitializeComponent();
-
-            tbResponse.Text = string.Empty;
             
             ocrEngine = new OcrEngine(OcrLanguage.English);
             this.NavigationCacheMode = NavigationCacheMode.Required;
@@ -96,7 +95,6 @@ namespace PicToTextRT
         {
             if (args.Files.Count > 0)
             {
-                //args.Files[0].Path;
                 var img = args.Files[0];
                 using (var stream = await img.OpenAsync(Windows.Storage.FileAccessMode.Read))
                 {
@@ -118,29 +116,29 @@ namespace PicToTextRT
                     OcrResult result = await ocrEngine.RecognizeAsync(height, width, pixels.DetachPixelData());
 
                     //// Check whether text is detected.
-                    //if (result.Lines != null)
-                    //{
-                    //    // Collect recognized text.
-                        
-                    //    foreach (var line in result.Lines)
-                    //    {
-                    //        foreach (var word in line.Words)
-                    //        {
-                    //            recognizedText += word.Text + " ";
-                    //        }
-                    //        recognizedText += Environment.NewLine;
-                    //    }
+                    if (result.Lines != null)
+                    {
+                        // Collect recognized text.
 
-                    //    // Display recognized text.
-                    //    outputPara.Text = recognizedText;
-                    //    //saveBtn.IsEnabled = true;
-                    //}
+                        foreach (var line in result.Lines)
+                        {
+                            foreach (var word in line.Words)
+                            {
+                                recognizedText += word.Text + " ";
+                            }
+                            recognizedText += Environment.NewLine;
+                        }
+
+                        // Display recognized text.
+                        outputPara.Text = recognizedText;
+                        btnCreatePage.IsEnabled = true;
+                    }
                 }
 
             }
-            else
+            else 
             {
-                outputPara.Text = "";
+                outputPara.Text = "Please select a picture or snap one with your phone's camera";
             }
 
             try
@@ -154,10 +152,10 @@ namespace PicToTextRT
                 }
             }
 
-            //Use the text box to display any exceptions.
             catch (LiveAuthException authExp)
             {
-                tbResponse.Text = authExp.ToString();
+                //tbResponse.Text = authExp.ToString();
+                Debug.WriteLine(authExp.ToString());
             }
         }
 
@@ -172,14 +170,16 @@ namespace PicToTextRT
                 {
 
                     liveClient = new LiveConnectClient(loginResult.Session);
-                    tbResponse.Text = "logged in";
+                    //tbResponse.Text = "logged in";
+                    Debug.WriteLine("Logged in");
                 }
 
             }
             // Use the text box to display exceptions.
             catch (LiveAuthException authExp)
             {
-                tbResponse.Text = authExp.ToString();
+                //tbResponse.Text = authExp.ToString();
+                Debug.WriteLine(authExp.ToString());
             }
         }
 
@@ -193,8 +193,6 @@ namespace PicToTextRT
             try
             {
                 var client = new HttpClient();
-
-                // Note: API only supports JSON return type.
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 // This allows you to see what happens when an unauthenticated call is made.
                 if (IsAuthenticated)
@@ -207,17 +205,21 @@ namespace PicToTextRT
 
                 var createMessage = new HttpRequestMessage(HttpMethod.Post, PagesEndPoint)
                 {
-                    Content = new StringContent("It worked! =D", System.Text.Encoding.UTF8, "text/plain")
+                    Content = new StringContent(
+                        "<html><body><h2>It worked! =D</h2><br><p>" + recognizedText +"</p></body></html>", 
+                        System.Text.Encoding.UTF8, "text/html"
+                        )
                 };
 
                 HttpResponseMessage response = await client.SendAsync(createMessage);
 
-                tbResponse.Text = response.ToString();
+                //tbResponse.Text = response.ToString();
+                Debug.WriteLine(response.ToString());
             }
 
             catch (Exception e)
             {
-                tbResponse.Text = e.ToString();
+                Debug.WriteLine(e.ToString());
             }
 
         }
