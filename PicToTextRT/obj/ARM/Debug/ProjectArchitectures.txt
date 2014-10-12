@@ -1,0 +1,1 @@
+C:\Users\Pranav\Documents\Visual Studio 2013\Projects\PicToTextRT\PicToTextRT\PicToTextRT.csproj;arm
